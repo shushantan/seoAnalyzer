@@ -1,0 +1,164 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SiteCoreTest",
+		"_postman_id": "fbaf3c7c-445c-0466-9a40-03369ce706e2",
+		"description": "below are endpoints to get data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetWordCountForMetaTag",
+			"request": {
+				"url": {
+					"raw": "{{URL}}/api/GetWordCount?input=http://google.com&isFilterStopWord=false&options=1&sortByColumn=2&sortOrder=1",
+					"protocol": "{{URL}}/api/GetWordCount?input=http",
+					"host": [
+						"google",
+						"com&isFilterStopWord=false&options=1&sortByColumn=2&sortOrder=1"
+					],
+					"query": [
+						{
+							"key": "input",
+							"value": "http://google.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "isFilterStopWord",
+							"value": "false",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "options",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sortByColumn",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sortOrder",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "with the given param input this request will count the occurences of words in the <meta content=\"...\"> tags"
+			},
+			"response": []
+		},
+		{
+			"name": "GetCountForExternalLink",
+			"request": {
+				"url": {
+					"raw": "{{URL}}/api/GetWordCount?input=http://google.com&isFilterStopWord=false&options=2&sortByColumn=2&sortOrder=1",
+					"protocol": "{{URL}}/api/GetWordCount?input=http",
+					"host": [
+						"google",
+						"com&isFilterStopWord=false&options=2&sortByColumn=2&sortOrder=1"
+					],
+					"query": [
+						{
+							"key": "input",
+							"value": "http://google.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "isFilterStopWord",
+							"value": "false",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "options",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sortByColumn",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sortOrder",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "with the given param input this request will count the occurences of link by getting all links in <a href=\"...\"> tags"
+			},
+			"response": []
+		},
+		{
+			"name": "GetWordCount",
+			"request": {
+				"url": {
+					"raw": "{{URL}}/api/GetWordCount?input=http://google.com&isFilterStopWord=false&options=2&sortByColumn=2&sortOrder=1",
+					"protocol": "{{URL}}/api/GetWordCount?input=http",
+					"host": [
+						"google",
+						"com&isFilterStopWord=false&options=2&sortByColumn=2&sortOrder=1"
+					],
+					"query": [
+						{
+							"key": "input",
+							"value": "http://google.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "isFilterStopWord",
+							"value": "false",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "options",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sortByColumn",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sortOrder",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "With the given param input ( either english text or URL) this request will count the occurences of word inside the pages."
+			},
+			"response": []
+		}
+	]
+}
